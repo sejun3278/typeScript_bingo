@@ -1,0 +1,34 @@
+/* 홈 */
+#bingo_start_div { padding : 10px 30px 10px 30px; }
+#bingo_start_div h3 { display: inline-block; border: solid 3px #ababab; padding: 10px 15px 10px 15px; border-radius: 5px; }
+
+/* 선택 화면 */
+#bingo_game_notice_div { font-weight: bold; font-family: 'paybooc-Bold' }
+#bingo_game_play_div { opacity: 0; }
+
+#select_bingo_board_div { margin-top: 50px; }
+#select_bingo_board_div .bingo_board_divs { display: inline-block; padding: 0px 50px; width: 400px; margin: 0px 50px; }
+
+.bingo_state_other_div h4 { margin: 5px 0px; font-family: 'Recipekorea'; }
+.bingo_state_other_div p { font-size: 12px; margin: 7px 0px; font-family: 'paybooc-Bold'; }
+
+.bingo_board_game_div { border: solid 2px #ababab; margin-top: 20px; }
+.bingo_board_cols_divs {  border-bottom: solid 2px #ababab; height: 76px; background-color: #edeef7; }
+.bingo_each_board_div { display: inline-block; width: 77.2px; height: 76px; border-right: solid 2px #ababab; }
+.bingo_each_board_div div { height: 50px; text-align: center; line-height: 4.5; font: 30px !important; font-weight: bold; font-family: 'paybooc-Bold'; }
+
+.bingo_selecting_div { position: absolute; font-family: 'Recipekorea'; margin: -395px 0px; line-height: 15; width: 400px; height: 394px; opacity: 0; color: white; text-align: center; background-color: black; }
+
+#selecting_red { background-color: #FFE7F3; }
+#selecting_blue { background-color: #D0EDFF; }
+
+#bingo_game_alert_div { font-family: 'TmoneyRoundWindExtraBold'; position: absolute; width: 100%; font-size: 12px; margin-top: 10px; font-weight: bold; color: #ffab73; }
+.bingo_computer_ready_div { position: absolute; margin: -30px -20px; display: inline-block; color: #ffc75f; width: 100px; transform: rotate(45deg); }
+
+#bingo_random_select_div { position: absolute; width: 100%; margin-top: 110px; }
+#bingo_random_select_div div { margin-top: 10px; }
+#bingo_random_select_div div input { padding: 5px 15px 5px 15px; border-radius: 5px; font-size: 14px; background-color: black; color: white; font-family: 'paybooc-Bold'; }
+
+#random_selecting { color: #ababab !important; }
+/* #select_bingo_board_div { display: grid; grid-template-columns: 50% 50%; margin-top: 40px; } */
+/* .select_board_div p { text-align: center; font-weight: bold; font-size: 14px; } */
