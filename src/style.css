@@ -3,10 +3,10 @@
 #bingo_start_div h3 { display: inline-block; border: solid 3px #ababab; padding: 10px 15px 10px 15px; border-radius: 5px; }
 
 /* 선택 화면 */
-#bingo_game_notice_div { font-weight: bold; font-family: 'paybooc-Bold' }
+#bingo_game_notice_div { position: absolute; width: 100%; margin-top: -40px; font-weight: bold; font-family: 'paybooc-Bold' }
 #bingo_game_play_div { opacity: 0; }
 
-#select_bingo_board_div { margin-top: 50px; }
+#select_bingo_board_div { margin-top: 80px; }
 #select_bingo_board_div .bingo_board_divs { display: inline-block; padding: 0px 50px; width: 400px; margin: 0px 50px; }
 
 .bingo_state_other_div h4 { margin: 5px 0px; font-family: 'Recipekorea'; }
@@ -19,16 +19,32 @@
 
 .bingo_selecting_div { position: absolute; font-family: 'Recipekorea'; margin: -395px 0px; line-height: 15; width: 400px; height: 394px; opacity: 0; color: white; text-align: center; background-color: black; }
 
-#selecting_red { background-color: #FFE7F3; }
-#selecting_blue { background-color: #D0EDFF; }
+#selecting_red, .bingo_select_red_board { background-color: #FFE7F3; }
+#selecting_blue, .bingo_select_blue_board { background-color: #D0EDFF; }
 
-#bingo_game_alert_div { font-family: 'TmoneyRoundWindExtraBold'; position: absolute; width: 100%; font-size: 12px; margin-top: 10px; font-weight: bold; color: #ffab73; }
+.bingo_complate_blue_board { background-color: #12A7FF; }
+.bingo_complate_red_board { background-color: #FF67B3; }
+
+#bingo_game_alert_div { font-family: 'TmoneyRoundWindExtraBold'; position: absolute; width: 100%; font-size: 12px; margin-top: -10px; font-weight: bold; color: #ffab73; }
 .bingo_computer_ready_div { position: absolute; margin: -30px -20px; display: inline-block; color: #ffc75f; width: 100px; transform: rotate(45deg); }
 
-#bingo_random_select_div { position: absolute; width: 100%; margin-top: 110px; }
-#bingo_random_select_div div { margin-top: 10px; }
-#bingo_random_select_div div input { padding: 5px 15px 5px 15px; border-radius: 5px; font-size: 14px; background-color: black; color: white; font-family: 'paybooc-Bold'; }
+/* #bingo_random_select_div { position: absolute; width: 100%; margin-top: 110px; }
+#bingo_random_select_div div { margin-top: 10px; } */
+input[name=bingo_random_select_div] { 
+    padding: 5px 15px 5px 15px; border-radius: 5px; font-size: 14px; background-color: black; color: white; font-family: 'paybooc-Bold'; 
+    position: absolute; margin: 80px 0px 0px -40px;
+}
 
 #random_selecting { color: #ababab !important; }
+#game_result_notice { padding: 10px; margin-top: -15px; }
+
+.win_div { color: #78c4d4; }
+.lose_div { color: #e3d18a; }
+.my_turn_div { position: absolute; font-family: 'Recipekorea'; margin : -15px 0px 0px 245px; transform: rotate(45deg); font-size: 21px; font-weight: bold; color: #ababab; }
+.game_result_div { position: absolute; font-family: 'Recipekorea'; margin : -15px 0px 0px 250px; transform: rotate(45deg); font-size: 21px; }
+
+#game_replay_div { position: absolute; width: 100%; text-align: center; font-size: 13px; color: #ababab; }
+#my_turn_image { position: absolute; width: 60px; margin: 70px 0px 0px -30px; }
+
 /* #select_bingo_board_div { display: grid; grid-template-columns: 50% 50%; margin-top: 40px; } */
 /* .select_board_div p { text-align: center; font-weight: bold; font-size: 14px; } */

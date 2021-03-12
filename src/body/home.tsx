@@ -17,7 +17,8 @@ interface HomeState {
     red_board : string,
     blue_board : string,
     red_board_obj : string,
-    blue_board_obj : string
+    blue_board_obj : string,
+    com_select_obj : string,
 }
 
 interface obj {
@@ -30,7 +31,8 @@ class Home extends React.Component<HomeProps, HomeState> {
         red_board : JSON.stringify([]),
         blue_board : JSON.stringify([]),
         red_board_obj : JSON.stringify({}),
-        blue_board_obj : JSON.stringify({})
+        blue_board_obj : JSON.stringify({}),
+        com_select_obj : JSON.stringify({})
     };
   
     constructor(props: HomeProps) {
@@ -133,7 +135,7 @@ class Home extends React.Component<HomeProps, HomeState> {
             obj[i] = {}
 
             for(let l : number = 0; l < 5; l++) {
-                arr[i].push({ 'number' : 0, 'select' : false, 'cover_select' : false });
+                arr[i].push({ 'number' : 0, 'select' : false, 'cover_select' : false, 'bingo' : false });
                 obj[i][l] = false
             }
         }
@@ -150,11 +152,20 @@ class Home extends React.Component<HomeProps, HomeState> {
 
     // 빙고판 업데이트
     _updateBoard = (type : string, data : string, obj : string) => {
+
         if(type === 'red') {
-            this.setState({ red_board : data, red_board_obj : obj })
+            this.setState({ red_board : data })
+
+            if(obj) {
+                this.setState({ red_board_obj : obj })
+            }
 
         } else if(type === 'blue') {
-            this.setState({ blue_board : data, blue_board_obj : obj })
+            this.setState({ blue_board : data })
+
+            if(obj) {
+                this.setState({ blue_board_obj : obj })
+            }
         }
     }
 

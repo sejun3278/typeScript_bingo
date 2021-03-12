@@ -1,0 +1,6 @@
+{
+    "icon" : {
+        "left" : "https://typescript-bingo.s3.ap-northeast-2.amazonaws.com/image/finger_left.png",
+        "right" : "https://typescript-bingo.s3.ap-northeast-2.amazonaws.com/image/finger_right.png"
+    }
+}
